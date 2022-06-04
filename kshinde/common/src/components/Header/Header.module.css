@@ -1,0 +1,31 @@
+.main {
+  display: flex;
+  background-color: grey;
+  height: 100px;
+}
+
+.divisionLeft {
+  display: flex;
+  height: 100%;
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+}
+
+.divisionRight {
+  display: flex;
+  background-color: aqua;
+  height: 100%;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+}
+
+.Logo {
+  width: 100px;
+  object-fit: cover;
+}
+
+.centerBlock {
+  display: flex;
+}
