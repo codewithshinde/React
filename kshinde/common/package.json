@@ -11,6 +11,7 @@
     "react-dom": "^17.0.2",
     "react-icons": "^4.2.0",
     "react-scripts": "4.0.3",
+    "styled-components": "^5.3.5",
     "submodules-lib-react": "file:../../submodules-lib-react",
     "web-vitals": "^1.1.2"
   },
