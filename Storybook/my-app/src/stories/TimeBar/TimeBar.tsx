@@ -1,47 +1,57 @@
 import React from 'react';
-import { HourBox, DayBox } from './styled';
+import { TimeBoxWrapper, HourBox, DayBox, StatusBar } from './styled';
 
 const TimeBar:React.FC<{}> = () => {
 
-  const [selectedHours, setSelectedHoursHours] = React.useState<number>(0);
+  const [loggedHours, setLoggedHours] = React.useState<number>(0);
+  const [hoveredHours, setHoveredHours] = React.useState<number>(0);
 
-  const clearHoursSelection = () => {
-    !selectedHours && setSelectedHoursHours(0);
+  const clearOnHoveredHours = () => {
+      setHoveredHours(0);
   }
 
-  const selectHoursOfADay=(hoursPerday: number) => {
-    setSelectedHoursHours(hoursPerday);
+  const logHours=(hoursPerday: number) => {
+    setLoggedHours(hoursPerday);
   }
-  
-  const onHoursHover =(hoursPerday: number) => {
-    if(selectedHours < hoursPerday) {
-      selectHoursOfADay(hoursPerday);
-    }
+
+  const onHover =(hoveredHour: number) => {
+    // if(loggedHours < hoveredHour) {
+      setHoveredHours(hoveredHour);
+    //}
   }
 
   const getTotalHoursInADay = (totalHours: number):JSX.Element[] => {
     const hourBoxes:JSX.Element[] = [];
     const tempTotalHoursArr = Array.from(Array(totalHours).keys()).reverse();
     tempTotalHoursArr.map(eachHour => {
-      const hours:number =+ eachHour;
+      const hourNo:number = eachHour+1;
+      const isHovered = hourNo === hoveredHours;
+      const isSelected = hourNo === loggedHours;
+      const blockUnderSelected = hourNo <= loggedHours;
+      const blockUnderHovered =  hoveredHours > loggedHours ?  hourNo > loggedHours && hourNo <= hoveredHours : hourNo <= hoveredHours;
+      const otherHours = blockUnderHovered || blockUnderSelected  ? "" : "1hr";   
       hourBoxes.push(
       <HourBox
-      key={hours}
-      onMouseLeave={clearHoursSelection}
-      onMouseOver={() => onHoursHover(hours)}
-      onClick={() => selectHoursOfADay(hours)} 
-      selected={ hours <= selectedHours}
-      />);
+        key={hourNo}
+        onMouseLeave={clearOnHoveredHours}
+        onMouseOver={() => onHover(hourNo)}
+        onClick={() => logHours(hourNo)}
+        hovered={blockUnderHovered}
+        selected={blockUnderSelected}
+      >
+        {isHovered ? hoveredHours : isSelected ? loggedHours : otherHours}
+      </HourBox>);
     });
     return hourBoxes;
   }
 
     return (
-        <div>
+        <TimeBoxWrapper>
+          <StatusBar/>
           <DayBox>
             {getTotalHoursInADay(10)}
           </DayBox>
-        </div>     
+        </TimeBoxWrapper>     
      )
 }
 
