@@ -1,5 +1,5 @@
 import React from 'react';
-import { TimeBoxWrapper, HourBox, DayBox, StatusBar } from './styled';
+import { TimeBoxWrapper, HourBox, DayBox, StatusBar, HourBlockText } from './styled';
 
 const TimeBar:React.FC<{}> = () => {
 
@@ -39,7 +39,7 @@ const TimeBar:React.FC<{}> = () => {
         hovered={blockUnderHovered}
         selected={blockUnderSelected}
       >
-        {isHovered ? hoveredHours : isSelected ? loggedHours : otherHours}
+        <HourBlockText>{isHovered ? hoveredHours : isSelected ? loggedHours : otherHours}</HourBlockText>
       </HourBox>);
     });
     return hourBoxes;
