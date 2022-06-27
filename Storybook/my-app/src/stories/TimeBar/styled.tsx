@@ -1,12 +1,14 @@
 import styled from "styled-components";
 import { kscolors, fonts } from "../lib";
 import { hoursProps } from "./types";
+import {colors} from "@kshinde-async-ui/theme";
 
 export const TimeBoxWrapper = styled.div`
     width: 130px;
     display: flex;
     flex-direction: row;
 `
+
 export const DayBox = styled.div`
     width: 100px;
     height: auto;

@@ -1,14 +1,22 @@
 {
-  "name": "@async-ui/theme",
+  "name": "@kshinde-async-ui/theme",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codewithshinde/React.git"
   },
   "author": "kshinde",
   "license": "ISC",
   "peerDependencies": {
     "typescript": ">=4.4.2"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/codewithshinde/React/issues"
+  },
+  "homepage": "https://github.com/codewithshinde/React#readme",
+  "description": ""
 }
