@@ -2,6 +2,11 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Important links
+https://react-beautiful-dnd.netlify.app/?path=/story/single-vertical-list--basic
+
+Backgrounds: https://www.awwwards.com/awwwards_collections/collections/trendy-gradients/
+
 ## Available Scripts
 
 In the project directory, you can run:
