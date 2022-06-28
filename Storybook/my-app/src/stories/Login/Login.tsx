@@ -1,7 +1,7 @@
 import React from "react";
 import { Text, ITextProps } from "@fluentui/react/lib/Text";
 import { Background, Left, LeftContent, Right, RightContent } from "./styled";
-import LoginFields from "./Internal/LoginInFields";
+import SignIn from "./Internal/SignIn";
 
 const Login: React.FC<{}> = () => {
   return (
@@ -11,7 +11,8 @@ const Login: React.FC<{}> = () => {
           <Text variant={"xxLarge" as ITextProps["variant"]}>
             Login
           </Text>
-          <LoginFields />
+          {/* <LoginFields /> */}
+          <SignIn />
         </LeftContent>
       </Left>
       <Right>

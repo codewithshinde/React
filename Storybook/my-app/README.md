@@ -3,9 +3,10 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Important links
-https://react-beautiful-dnd.netlify.app/?path=/story/single-vertical-list--basic
 
+ReactDND: https://react-beautiful-dnd.netlify.app/?path=/story/single-vertical-list--basic
 Backgrounds: https://www.awwwards.com/awwwards_collections/collections/trendy-gradients/
+formik: https://formik.org/docs/tutorial
 
 ## Available Scripts
 
