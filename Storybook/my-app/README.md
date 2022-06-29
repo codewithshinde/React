@@ -7,6 +7,12 @@ https://react-beautiful-dnd.netlify.app/?path=/story/single-vertical-list--basic
 
 Backgrounds: https://www.awwwards.com/awwwards_collections/collections/trendy-gradients/
 
+dnd examples: https://codesandbox.io/examples/package/react-beautiful-dnd
+
+mind map: https://miro.com/app/board/uXjVOpEWNFs=/
+
+formik+fluent: https://codesandbox.io/s/44kd6?file=/src/InputSelect.js
+
 ## Available Scripts
 
 In the project directory, you can run:
