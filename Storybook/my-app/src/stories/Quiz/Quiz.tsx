@@ -1,19 +1,40 @@
-import { IChoiceGroupProps } from "@fluentui/react";
 import React from "react";
+import { PrimaryButton } from "@fluentui/react";
+import { Form, Formik } from "formik";
+import RadioInput from "../FormFields/RadioInput";
+import { QuizProps } from "./types";
 
-type Question = {
-    question: string;
-    options: IChoiceGroupProps[]
-}
+const Quiz: React.FC<QuizProps> = ({ questions }) => {
+  const initialValues = {};
 
-interface QuizProps {
-    questions: Question[]
-}
-
-const Quiz: React.FC<QuizProps> = () => {
-    return (
-        <h1>Quiz</h1>
-    )
-}
+  return (
+    <Formik
+      initialValues={initialValues}
+      onSubmit={(values, actions) => {
+        console.log({ values, actions });
+        alert(JSON.stringify(values, null, 2));
+        actions.setSubmitting(false);
+      }}
+    >
+      <Form>
+        {questions.map((ques) => (
+          <RadioInput
+            options={ques.options}
+            name={ques.questionId}
+            label={ques.title}
+            id={ques.questionId}
+          />
+        ))}
+        <PrimaryButton
+          className="loginBtn"
+          text="Login"
+          type="submit"
+          disabled={false}
+          checked={false}
+        />
+      </Form>
+    </Formik>
+  );
+};
 
 export default Quiz;
