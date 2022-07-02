@@ -2,6 +2,25 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Integrate Products CONFIRM
+
+Invoice generator / payslip:
+https://github.com/tuanpham-dev/react-invoice-generator/tree/master/src
+https://github.com/johnuberbacher/invoice-generator
+
+Do More: https://github.com/abhinavg916/do-more
+
+quiz app:
+https://github.com/Jatin-8898/react-quiz-app
+https://github.com/SafdarJamal/quiz-app
+https://codepen.io/jordanutz/pen/mdOPWpE
+
+## PENDING
+
+video chat app: https://github.com/adrianhajdin/project_video_chat
+crypto tracker: https://github.com/piyush-eon/react-crypto-tracker
+weather: https://codepen.io/jordanutz/pen/RwozxwG
+
 ## Important links
 
 ReactDND: https://react-beautiful-dnd.netlify.app/?path=/story/single-vertical-list--basic
