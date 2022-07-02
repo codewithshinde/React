@@ -7,6 +7,7 @@ export const TimeBoxWrapper = styled.div`
     display: flex;
     flex-direction: row;
 `
+
 export const DayBox = styled.div`
     width: 100px;
     height: auto;

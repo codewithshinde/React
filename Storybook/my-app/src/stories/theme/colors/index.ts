@@ -6,7 +6,8 @@ enum colors {
     steelBlue = '#3581b8',
     steelBlueLight = '#3581b878',
     alabaster = '#dee2d6',
-    amber = '#FF7F11'
+    amber = '#FF7F11',
+    white = "#ffffff"
 }
 
 export default colors;
