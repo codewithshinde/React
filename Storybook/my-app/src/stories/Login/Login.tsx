@@ -6,14 +6,10 @@ const Login: React.FC<{}> = () => {
   return (
     <Background>
       <Left>
-          <LogInFields />
+        <LogInFields />
       </Left>
       <Right>
-        <RightContent>
-          {/* <Text color="white" variant={"mega" as ITextProps["variant"]}>
-            Basic Content Here
-          </Text> */}
-        </RightContent>
+        <RightContent></RightContent>
       </Right>
     </Background>
   );

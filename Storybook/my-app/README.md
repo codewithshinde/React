@@ -33,6 +33,11 @@ mind map: https://miro.com/app/board/uXjVOpEWNFs=/
 
 formik+fluent: https://codesandbox.io/s/44kd6?file=/src/InputSelect.js
 
+## CSS
+
+examples: https://codesandbox.io/u/JerryDoran
+layout: https://codesandbox.io/s/4gbun?file=/src/Components/Footer.js
+
 ## Available Scripts
 
 In the project directory, you can run:
