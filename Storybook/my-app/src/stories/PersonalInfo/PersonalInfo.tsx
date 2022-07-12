@@ -6,7 +6,7 @@ import {
   Pivot,
   PivotItem,
 } from "@fluentui/react";
-import BasicDetails from "./Internal/BasicDetails";
+import { PersonalDetailsForm } from "../FormsLib/Forms";
 
 const labelStyles: Partial<IStyleSet<ILabelStyles>> = {
   root: { marginTop: 10 },
@@ -16,9 +16,7 @@ const PersonalInfo: React.FC<{}> = () => {
   return (
     <Pivot aria-label="Basic Pivot Example">
       <PivotItem headerText="Personal Info">
-        <Label styles={labelStyles}>
-          <BasicDetails />
-        </Label>
+        <PersonalDetailsForm />
       </PivotItem>
       <PivotItem headerText="Recent">
         <Label styles={labelStyles}>Pivot #2</Label>

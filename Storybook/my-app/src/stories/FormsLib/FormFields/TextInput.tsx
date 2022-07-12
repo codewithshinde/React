@@ -5,7 +5,7 @@ import { ITextFieldProps, TextField } from "@fluentui/react";
 interface TextInputProps extends ITextFieldProps {
     label: string;
     name: string;
-    id: string;
+    id?: string;
 }
 
 const TextInput: React.FC<TextInputProps> = ({ label, name, ...props }) => {

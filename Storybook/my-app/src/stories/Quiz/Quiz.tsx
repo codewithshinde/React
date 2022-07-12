@@ -1,7 +1,7 @@
 import React from "react";
 import { PrimaryButton } from "@fluentui/react";
 import { Form, Formik } from "formik";
-import RadioInput from "../FormFields/RadioInput";
+import { RadioInput } from "../FormsLib/FormFields";
 import { QuizProps } from "./types";
 
 const Quiz: React.FC<QuizProps> = ({ questions }) => {
