@@ -18,6 +18,7 @@ const InputDate: React.FC<InputDateProps> = ({ label, ...props }) => {
     <DatePicker
       firstDayOfWeek={DayOfWeek.Sunday}
       showWeekNumbers={true}
+      label={label}
       firstWeekOfYear={1}
       onSelectDate={(e) => {
         form.setValue(e);

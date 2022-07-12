@@ -14,7 +14,9 @@ interface BasicFieldDetails<T, U> {
   label: string
 }
 
-export interface TextField<U> extends BasicFieldDetails<FormTypes.TEXT, U> { }
+export interface TextField<U> extends BasicFieldDetails<FormTypes.TEXT, U> {
+  inputType?: string;
+}
 
 export interface RadioField<U> extends BasicFieldDetails<FormTypes.RADIO, U> {
   id: string;

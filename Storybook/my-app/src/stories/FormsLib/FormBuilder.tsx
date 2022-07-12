@@ -33,6 +33,7 @@ const getFieldByType = <U extends | PersonalDetailsFields>(name: string, field: 
       return <TextInput
         key={key}
         label={field.label}
+        inputType={field.inputType}
         name={`${name}.${field.field}`}
       />;
   }
