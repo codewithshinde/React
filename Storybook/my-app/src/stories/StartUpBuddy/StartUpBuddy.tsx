@@ -1,24 +1,39 @@
 import React from "react";
-import { ThemeProvider } from "@fluentui/react/lib/Theme";
+import { ThemeProvider, Theme } from "@fluentui/react/lib/Theme";
 import PersonalInfo from "../PersonalInfo";
 import SideNav from "../SideNav/SideNav";
 import darkTheme from "./modes/Darkmode";
 import { Grid, Header, SideBar, Content, Footer } from "./styled";
 import lightTheme from "./modes/Lightmode";
+import { initializeIcons } from '@fluentui/font-icons-mdl2'
+import TimeBar from "../TimeBar";
+import TimeSheet from "../TimeSheet/TimeSheet";
+import { loadTheme } from "@fluentui/react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Path } from "./routes/Path";
+import LeavePanel from "../LeavePanel/LeavePanel";
 
 const StartUpBuddy: React.FC<{}> = () => {
+  initializeIcons();
+  loadTheme(lightTheme);
   return (
     <ThemeProvider theme={lightTheme}>
-      <Grid>
-        <Header />
-        <SideBar>
-          <SideNav></SideNav>
-        </SideBar>
-        <Content>
-          <PersonalInfo />
-        </Content>
-        <Footer />
-      </Grid>
+      <BrowserRouter>
+        <Grid>
+          <Header />
+          <SideBar>
+            <SideNav></SideNav>
+          </SideBar>
+          <Content>
+            <Routes>
+              <Route path={Path.TIMESHEET} element={<TimeSheet />} />
+              <Route path={Path.LEAVE} element={<LeavePanel />} />
+              <Route path={Path.PERSONAL_INFO} element={<PersonalInfo />} />
+            </Routes>
+          </Content>
+          <Footer />
+        </Grid>
+      </BrowserRouter>
     </ThemeProvider>
   );
 };

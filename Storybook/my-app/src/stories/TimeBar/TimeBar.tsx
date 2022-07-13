@@ -1,5 +1,6 @@
 import React from 'react';
-import { TimeBoxWrapper, HourBox, DayBox, StatusBar, HourBlockText } from './styled';
+import { TimeBoxWrapper, HourBox, DayBox, StatusBar, HourBlockText, Container } from './styled';
+import { Checkbox } from '@fluentui/react';
 
 const TimeBar: React.FC<{}> = () => {
 
@@ -46,12 +47,17 @@ const TimeBar: React.FC<{}> = () => {
   }
 
   return (
-    <TimeBoxWrapper>
-      <StatusBar />
-      <DayBox>
-        {getTotalHoursInADay(10)}
-      </DayBox>
-    </TimeBoxWrapper>
+    <Container>
+      <p>13/07/2022</p>
+      <TimeBoxWrapper>
+        <StatusBar />
+        <DayBox>
+          {getTotalHoursInADay(10)}
+        </DayBox>
+      </TimeBoxWrapper>
+      <p>Monday</p>
+      <Checkbox label="Mark leave" />
+    </Container>
   )
 }
 
