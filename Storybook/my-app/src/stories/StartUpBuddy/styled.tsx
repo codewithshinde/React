@@ -1,21 +1,21 @@
 import styled from "styled-components";
-import { TextField } from '@fluentui/react/lib/TextField';
-import { Dropdown } from '@fluentui/react/lib/Dropdown';
+import { colors } from "../theme";
 
-
-
-export const Wrapper = styled.div`
-    display: flex;
-    flex-direction: column;
-    max-width: 500px;
-    height: auto;
+export const Grid = styled.div`
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 10vh auto 10vh;
 `;
 
-export const TextInput = styled(TextField)`
-    margin-top: 10px;
-`
+export const Header = styled.div`
+  background-color: ${colors.richBlack};
+  grid-column: 1 / -1;
+`;
+export const SideBar = styled.div``;
+export const Content = styled.div``;
 
-export const CustomDropdown = styled(Dropdown)`
-    margin-top: 10px;
-    width: 200px;
-`
+export const Footer = styled.div`
+  background-color: ${colors.alabaster};
+  grid-column: 1 / -1;
+`;

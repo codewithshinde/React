@@ -21,7 +21,7 @@ export const FormConatiner = styled.div`
 export const Grid = styled.div`
   display: grid;
   height: 100vh;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 20% 70%;
   grid-template-rows: 10vh 80vh 10vh;
   background-color: ${colors.darkGrey};
 `;
