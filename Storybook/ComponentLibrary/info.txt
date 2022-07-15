@@ -12,5 +12,10 @@ yarn add react-router-dom@6
 yarn install (it will fail)
 yarn remove node-sass
 yarn add -D sass
-yarn add @fluentui/react styled-components react-beautiful-dnd formik yup react-router-dom@6
+yarn add @fluentui/react 
+yarn add styled-components 
+yarn add react-beautiful-dnd 
+yarn add formik 
+yarn add yup 
+yarn add react-router-dom@6
 yarn start
