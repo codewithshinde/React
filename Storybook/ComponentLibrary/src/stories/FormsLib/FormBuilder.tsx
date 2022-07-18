@@ -35,6 +35,7 @@ const getFieldByType = <U extends | PersonalDetailsFields>(name: string, field: 
         label={field.label}
         inputType={field.inputType}
         name={`${name}.${field.field}`}
+        required={true}
       />;
   }
 };

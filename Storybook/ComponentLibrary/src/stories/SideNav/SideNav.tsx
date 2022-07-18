@@ -22,9 +22,16 @@ const navLinkGroups: INavLinkGroup[] = [
         icon: 'DateTime'
       },
       {
-        key: 'myleave',
+        key: 'Work log Caleder',
         name: 'My Leave',
         url: '/admin/personalinfo',
+        icon: 'Info'
+      },
+      {
+        key: 'myleave',
+        name: 'My Leave',
+        url: '/admin/worklogcalender',
+        icon: 'Calender'
       },
     ],
   },

@@ -12,6 +12,7 @@ import { loadTheme } from "@fluentui/react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Path } from "./routes/Path";
 import LeavePanel from "../LeavePanel/LeavePanel";
+import Calender from "../Calender/Calender";
 
 const StartUpBuddy: React.FC<{}> = () => {
   initializeIcons();
@@ -29,6 +30,7 @@ const StartUpBuddy: React.FC<{}> = () => {
               <Route path={Path.TIMESHEET} element={<TimeSheet />} />
               <Route path={Path.LEAVE} element={<LeavePanel />} />
               <Route path={Path.PERSONAL_INFO} element={<PersonalInfo />} />
+              <Route path={Path.WOK_LOG_CALENDER} element={<Calender />} />
             </Routes>
           </Content>
           <Footer />
