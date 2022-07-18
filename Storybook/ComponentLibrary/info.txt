@@ -1,0 +1,21 @@
+
+cd C:\TeamAsync\Async\React\Storybook\products\StarterPack
+## Components
+yarn add @fluentui/react
+yarn add styled-components
+yarn add react-beautiful-dnd
+yarn add formik
+yarn add yup
+yarn add react-router-dom@6
+
+## Story book
+yarn install (it will fail)
+yarn remove node-sass
+yarn add -D sass
+yarn add @fluentui/react 
+yarn add styled-components 
+yarn add react-beautiful-dnd 
+yarn add formik 
+yarn add yup 
+yarn add react-router-dom@6
+yarn start
