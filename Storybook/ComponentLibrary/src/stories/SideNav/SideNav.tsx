@@ -1,90 +1,94 @@
-import * as React from 'react';
-import { Nav, INavStyles, INavLinkGroup } from '@fluentui/react/lib/Nav';
+import * as React from "react";
+import { Nav, INavStyles, INavLinkGroup } from "@fluentui/react/lib/Nav";
 
 const navStyles: Partial<INavStyles> = { root: { width: "100%" } };
 
 const navLinkGroups: INavLinkGroup[] = [
   {
-    name: 'My Details',
-    expandAriaLabel: 'Expand Basic components section',
-    collapseAriaLabel: 'Collapse Basic components section',
+    name: "My Details",
+    expandAriaLabel: "Expand Basic components section",
+    collapseAriaLabel: "Collapse Basic components section",
     links: [
       {
-        key: 'Timesheet',
-        name: 'Timesheet',
+        key: "Timesheet",
+        name: "Timesheet",
         url: "/admin/timesheet",
-        icon: 'TimeSheet'
+        icon: "TimeSheet",
       },
       {
-        key: 'applyleave',
-        name: 'Apply Leave',
+        key: "applyleave",
+        name: "Apply Leave",
         url: "/admin/leave",
-        icon: 'DateTime'
+        icon: "DateTime",
       },
       {
-        key: 'Work log Caleder',
-        name: 'My Leave',
-        url: '/admin/personalinfo',
-        icon: 'Info'
+        key: "PersonalInfo",
+        name: "Personal Info",
+        url: "/admin/personalinfo",
+        icon: "Info",
       },
       {
-        key: 'myleave',
-        name: 'My Leave',
-        url: '/admin/worklogcalender',
-        icon: 'Calender'
-      },
-    ],
-  },
-  {
-    name: 'Extended components',
-    expandAriaLabel: 'Expand Extended components section',
-    collapseAriaLabel: 'Collapse Extended components section',
-    links: [
-      {
-        key: 'ColorPicker',
-        name: 'ColorPicker',
-        url: '#/examples/colorpicker',
+        key: "WorklogCaleder",
+        name: "Work log Caleder",
+        url: "/admin/worklogcalender",
+        icon: "Calendar",
       },
       {
-        key: 'ExtendedPeoplePicker',
-        name: 'ExtendedPeoplePicker',
-        url: '#/examples/extendedpeoplepicker',
-      },
-      {
-        key: 'GroupedList',
-        name: 'GroupedList',
-        url: '#/examples/groupedlist',
+        key: "Charts",
+        name: "Charts",
+        url: "/admin/charts",
+        icon: "Chart",
       },
     ],
   },
   {
-    name: 'Utilities',
-    expandAriaLabel: 'Expand Utilities section',
-    collapseAriaLabel: 'Collapse Utilities section',
+    name: "Admin Panel",
+    expandAriaLabel: "Expand Extended components section",
+    collapseAriaLabel: "Collapse Extended components section",
     links: [
       {
-        key: 'FocusTrapZone',
-        name: 'FocusTrapZone',
-        url: '#/examples/focustrapzone',
+        key: "ColorPicker",
+        name: "ColorPicker",
+        url: "#/examples/colorpicker",
       },
       {
-        key: 'FocusZone',
-        name: 'FocusZone',
-        url: '#/examples/focuszone',
+        key: "ExtendedPeoplePicker",
+        name: "ExtendedPeoplePicker",
+        url: "#/examples/extendedpeoplepicker",
       },
       {
-        key: 'MarqueeSelection',
-        name: 'MarqueeSelection',
-        url: '#/examples/marqueeselection',
+        key: "GroupedList",
+        name: "GroupedList",
+        url: "#/examples/groupedlist",
+      },
+    ],
+  },
+  {
+    name: "Utilities",
+    expandAriaLabel: "Expand Utilities section",
+    collapseAriaLabel: "Collapse Utilities section",
+    links: [
+      {
+        key: "FocusTrapZone",
+        name: "FocusTrapZone",
+        url: "#/examples/focustrapzone",
+      },
+      {
+        key: "FocusZone",
+        name: "FocusZone",
+        url: "#/examples/focuszone",
+      },
+      {
+        key: "MarqueeSelection",
+        name: "MarqueeSelection",
+        url: "#/examples/marqueeselection",
       },
     ],
   },
 ];
 
 const SideNav: React.FunctionComponent = () => {
-  return (
-    <Nav styles={navStyles} ariaLabel="Nav" groups={navLinkGroups} />
-  );
+  return <Nav styles={navStyles} ariaLabel="Nav" groups={navLinkGroups} />;
 };
 
 export default SideNav;
